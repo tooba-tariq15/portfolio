@@ -11,10 +11,15 @@
 *{box-sizing:border-box;scroll-behavior:smooth}
 html,body{overflow-x:hidden;width:100%;margin:0;padding:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
 
-/* GLOBAL PARAGRAPH JUSTIFICATION */
+/* GLOBAL PARAGRAPH JUSTIFICATION WITHOUT WORD BREAKING */
 p {
   text-align: justify !important;
   text-justify: inter-word !important;
+  -webkit-hyphens: manual !important;
+  -ms-hyphens: manual !important;
+  hyphens: manual !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
 }
 
 /* NAVIGATION */
@@ -141,8 +146,15 @@ section.alt{background:#fff}
 /* MOBILE RESPONSIVE STYLES */
 @media(max-width:900px){
   .container{
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Optimize Mobile Typography for Clean Justification without broken words */
+  p {
+    font-size: 13.5px !important;
+    line-height: 1.55 !important;
+    letter-spacing: -0.01em;
   }
 
   .nav{
@@ -192,8 +204,8 @@ section.alt{background:#fff}
   }
 
   .hero p{
-    font-size:15px; 
-    line-height:1.6;
+    font-size:14.5px !important; 
+    line-height:1.55;
   }
 
   .buttons{flex-direction:column}
