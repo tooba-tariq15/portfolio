@@ -30,11 +30,16 @@ html, body {
   line-height: 1.6;
 }
 
-/* GLOBAL PARAGRAPH STYLING */
+/* PERFECT JUSTIFICATION FOR DESKTOP & GENERAL */
 p {
-  text-align: justify;
-  text-justify: inter-word;
-  hyphens: auto;
+  text-align: justify !important;
+  text-align-last: left !important;   /* Paragaph ki last line wide stretch nahi hogi */
+  text-justify: inter-word !important; /* Spaces ko adjust karke justify karta hai */
+  -webkit-hyphens: none !important;    /* Hyphenation bilkul off */
+  -ms-hyphens: none !important;
+  hyphens: none !important;
+  word-break: normal !important;      /* Words ko tootne se rokta hai */
+  overflow-wrap: normal !important;
 }
 
 /* NAVIGATION */
@@ -183,7 +188,7 @@ nav {
   font-size: 14px;
   margin: 0;
   color: var(--muted);
-  text-align: left;
+  text-align: left !important;
 }
 
 section {
@@ -344,9 +349,17 @@ section.alt {
 
 /* MOBILE RESPONSIVE STYLES */
 @media (max-width: 900px) {
-  p {
-    text-align: left;
+  /* MOBILE JUSTIFICATION ADDED HERE */
+  p, .about p, .project p, .hero p, .item p, .contact p {
+    text-align: justify !important;
+    text-align-last: left !important;
+    text-justify: inter-word !important;
+    -webkit-hyphens: none !important;
+    -ms-hyphens: none !important;
+    hyphens: none !important;
+    word-break: normal !important;
   }
+  
   .container {
     padding-left: 20px;
     padding-right: 20px;
