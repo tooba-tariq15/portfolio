@@ -465,7 +465,7 @@ section.alt {
 <div>
 <div class="eyebrow">Software Engineer | Data Analyst</div>
 <h1>Building solutions with <span>code & data.</span></h1>
-<p>Combining a strong software engineering foundation with hands-on expertise in Python, SQL, PostgreSQL, and Power BI to build end-to-end data analytics pipelines and interactive dashboards.</p>
+<p>Combining a strong software engineering foundation with hands-on expertise in Python, SQL, PostgreSQL, and Power BI to build end-to-end data pipelines and interactive dashboards that drive real insights.</p>
 <div class="buttons"><a class="btn primary" href="#projects">View Projects</a><a class="btn" href="TOOBA CV.pdf">Download CV</a></div>
 </div>
 <div class="profile-card"><div class="profile-icon"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M4 20c0-3.5 3.5-6 8-6s8 2.5 8 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><h3>Tooba Tariq</h3><p>Software Engineer | Data Analyst</p><p style="margin-top:15px">Rawalpindi, Pakistan</p><p style="margin-top:6px">CUST · BS Software Engineering</p></div>
@@ -483,27 +483,124 @@ section.alt {
 <span class="skill">MySQL</span><span class="skill">PostgreSQL</span><span class="skill">Power BI</span><span class="skill">IBM Cognos</span><span class="skill">DAX</span><span class="skill">Power Query</span><span class="skill">Data Modeling</span><span class="skill">Data Visualization</span><span class="skill">Dashboards</span><span class="skill">Python</span><span class="skill">C++</span><span class="skill">C#</span><span class="skill">JavaScript</span><span class="skill">Object-Oriented Programming</span><span class="skill">Data Structures</span><span class="skill">Computer Networks</span><span class="skill">HTML5</span><span class="skill">CSS3</span><span class="skill">Bootstrap</span><span class="skill">Database Schema Design</span><span class="skill">Unity</span><span class="skill">Git</span><span class="skill">GitHub</span><span class="skill">VS Code</span><span class="skill">MS Office</span>
 </div></div></section>
 
-<section id="projects" class="alt"><div class="container">
+<section id="projects" class="alt">
+<div class="container">
 <h2 class="section-title">Projects</h2>
 <div class="project-grid">
-<article class="project"><div class="type">Data Analytics</div><h3>Metro Care Hospital</h3><p><b>Patient & Appointment Analytics Dashboard</b></p><p>Architected an end-to-end business intelligence pipeline centered around a dimensional star-schema data model. Sourced operational healthcare records from PostgreSQL, utilizing Power Query for structured data cleansing, transformation, and relational mapping. Formulated dynamic DAX measures to calculate critical operational metrics, evaluate patient flow throughput, and visualize peak resource utilization across hospital departments.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">PostgreSQL</span><span class="tag">DAX</span><span class="tag">Power Query</span><span class="tag">Star Schema</span></div></article>
 
-<article class="project"><div class="type">Data Analytics</div><h3>Urban Basket</h3><p><b>Retail Database & SQL Analysis</b></p><p>Designed and implemented a normalized relational database schema in PostgreSQL, establishing strict primary and foreign key constraints to enforce transactional data integrity across multi-table retail structures. Utilized advanced SQL techniques, including Common Table Expressions (CTEs), window functions for performance ranking, conditional CASE logic, and multi-table joins, to aggregate complex transactional records, analyze purchasing behavior, and expose key revenue performance trends.</p><div class="tags"><span class="tag">PostgreSQL</span><span class="tag">SQL</span><span class="tag">Database Design</span><span class="tag">CTEs</span><span class="tag">Window Functions</span></div></article>
+<article class="project">
+  <div class="type">Data Analytics</div>
+  <h3>Metro Care Hospital</h3>
+  <p><b>Patient & Appointment Analytics Dashboard</b></p>
+  <p>Metro Care Hospital is an end-to-end business intelligence pipeline built around a dimensional star-schema data model, sourcing operational healthcare records from PostgreSQL. Power Query handled data cleansing and transformation, while dynamic DAX measures powered an interactive Power BI dashboard tracking patient flow throughput and peak resource utilization across departments.</p>
+  <div class="tags">
+    <span class="tag">Power BI</span>
+    <span class="tag">PostgreSQL</span>
+    <span class="tag">DAX</span>
+    <span class="tag">Power Query</span>
+    <span class="tag">Star Schema</span>
+  </div>
+</article>
 
-<article class="project"><div class="type">Data Analytics</div><h3>BookNook Books</h3><p><b>Data Analytics Pipeline</b></p><p>Engineered an automated end-to-end data processing pipeline utilizing Python with SQLAlchemy to systematically clean, validate, and load raw order data into PostgreSQL. Applied Pandas and NumPy for numerical operations and statistical trend analysis, and synthesized the output using Seaborn, Matplotlib, and Folium to map out spatial purchase distributions, inventory velocity, and customer buying behavior.</p><div class="tags"><span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">SQLAlchemy</span><span class="tag">Pandas</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">Folium</span></div></article>
+<article class="project">
+  <div class="type">Data Analytics</div>
+  <h3>Urban Basket</h3>
+  <p><b>Retail Database & SQL Analysis</b></p>
+  <p>Urban Basket is a normalized relational database designed in PostgreSQL, with strict primary and foreign key constraints enforcing data integrity across multi-table retail structures. Advanced SQL techniques, including CTEs, window functions, CASE logic, and multi-table joins, were used to aggregate transactional records and surface key revenue performance trends.</p>
+  <div class="tags">
+    <span class="tag">PostgreSQL</span>
+    <span class="tag">SQL</span>
+    <span class="tag">Database Design</span>
+    <span class="tag">CTEs</span>
+    <span class="tag">Window Functions</span>
+  </div>
+</article>
 
-<article class="project"><div class="type">Final Year Project</div><h3>Escape Breakout</h3><p>Developed Escape Breakout, a single-player 3D sci-fi action-puzzle game built in Unity. The story starts with a pilot stranded in a dangerous alien maze after a spaceship crash. To repair the ship and escape, players must navigate the maze, avoid patrolling enemies, and solve logic puzzles under a tight countdown timer to unlock defensive weapons. Implemented C# to build core gameplay features, including a mini-map with real-time distance tracking, dynamic hint triggers, timed puzzle mechanics, and enemy encounters</p><div class="tags"><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Game Development</span></div></article>
+<article class="project">
+  <div class="type">Data Analytics</div>
+  <h3>BookNook Books</h3>
+  <p><b>Data Analytics Pipeline</b></p>
+  <p>BookNook Books is an automated data processing pipeline built in Python with SQLAlchemy to clean, validate, and load raw order data into PostgreSQL. Pandas and NumPy handled statistical trend analysis, while Seaborn, Matplotlib, and Folium visualized spatial purchase distributions, inventory velocity, and customer buying behavior.</p>
+  <div class="tags">
+    <span class="tag">Python</span>
+    <span class="tag">PostgreSQL</span>
+    <span class="tag">SQLAlchemy</span>
+    <span class="tag">Pandas</span>
+    <span class="tag">Matplotlib</span>
+    <span class="tag">Seaborn</span>
+    <span class="tag">Folium</span>
+  </div>
+</article>
 
-<article class="project"><div class="type">Game Development</div><h3>Gibbets: Bow Master</h3><p>Developed a physics-driven simulation engine in Unity featuring real-time vector trajectory calculations and projectile motion physics. Implemented a precision-weighted scoring algorithm written in C# to calculate shot accuracy, velocity impact, and dynamic score distribution during active gameplay.</p><div class="tags"><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Physics</span></div></article>
+<article class="project">
+  <div class="type">Final Year Project</div>
+  <h3>Escape Breakout</h3>
+  <p>Escape Breakout is a single-player 3D sci-fi action-puzzle game built in Unity, where a pilot stranded after a spaceship crash must navigate a dangerous alien maze to repair the ship and escape. Built with C#, it features a real-time mini-map with distance tracking, dynamic hint triggers, timed puzzle mechanics, and enemy encounters under a countdown timer.</p>
+  <div class="tags">
+    <span class="tag">Unity</span>
+    <span class="tag">C#</span>
+    <span class="tag">Game Development</span>
+  </div>
+</article>
 
-<article class="project"><div class="type">Web Development</div><h3>Food Munch Café</h3><p>Architected a multi-page food-ordering web application integrated with a relational MySQL backend to handle menu management and user orders. Implemented responsive UI layout structures with HTML, CSS, and Bootstrap, while engineering stateful features for dynamic menu browsing, real-time cart handling, and order fulfillment tracking.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Bootstrap</span><span class="tag">MySQL</span></div></article>
+<article class="project">
+  <div class="type">Game Development</div>
+  <h3>Gibbets: Bow Master</h3>
+  <p>Gibbets: Bow Master is a physics-driven archery game built in Unity, where the core mechanic relies on simulating realistic projectile motion using kinematic equations for position, velocity, and gravity, executed through Unity's Rigidbody2D and physics engine. A vector trajectory system previews the arrow's arc before release, while C# scripts handle collision detection and feed impact data into a weighted scoring algorithm based on accuracy, velocity, and angle of impact.</p>
+  <div class="tags">
+    <span class="tag">Unity</span>
+    <span class="tag">C#</span>
+    <span class="tag">Physics</span>
+  </div>
+</article>
 
-<article class="project"><div class="type">C++</div><h3>Bank Management System</h3><p>Engineered a terminal-based financial administration application in C++ featuring secure user authentication and session management. Implemented transaction processing logic to automate account creation, deposits, withdrawals, and balance updates, while maintaining detailed execution logs for audit-ready reporting.</p><div class="tags"><span class="tag">C++</span><span class="tag">OOP</span><span class="tag">Authentication</span></div></article>
+<article class="project">
+  <div class="type">Web Development</div>
+  <h3>Food Munch Café</h3>
+  <p>Food Munch Café is a multi-page food-ordering web app with a responsive frontend built using HTML, CSS, and Bootstrap's grid system, letting users browse the menu and select items and quantities. The app calculates the total bill in real time, maintains stateful cart tracking across pages, and persists completed orders into a relational database managed through pgAdmin (PostgreSQL).</p>
+  <div class="tags">
+    <span class="tag">HTML</span>
+    <span class="tag">CSS</span>
+    <span class="tag">Bootstrap</span>
+    <span class="tag">MySQL</span>
+  </div>
+</article>
 
-<article class="project"><div class="type">C++</div><h3>Hotel Management System</h3><p>Designed a modular hotel operations platform in C++ structured around Object-Oriented Programming (OOP) principles. Applied strict modular encapsulation to separate room availability tracking, guest reservations, and automated billing calculations into independent, easily testable components.</p><div class="tags"><span class="tag">C++</span><span class="tag">OOP</span><span class="tag">System Design</span></div></article>
+<article class="project">
+  <div class="type">C++</div>
+  <h3>Bank Management System</h3>
+  <p>Bank Management System is a terminal-based financial administration application built in C++, featuring secure user authentication and session management to control access to account operations. It automates core banking functions like account creation, deposits, withdrawals, and balance updates, validating each transaction before execution and logging details like type, amount, and timestamp for audit-ready reporting.</p>
+  <div class="tags">
+    <span class="tag">C++</span>
+    <span class="tag">OOP</span>
+    <span class="tag">Authentication</span>
+  </div>
+</article>
 
-<article class="project"><div class="type">C++</div><h3>Lottery Management System</h3><p>Built an automated administrative C++ application utilizing pseudo-random number generator (PRNG) algorithms to manage fair draw execution. Applied structured memory handling routines to dynamically update participant lists, track ticket allocations, and process winner payouts.</p><div class="tags"><span class="tag">C++</span><span class="tag">Algorithms</span></div></article>
-</div></div></section>
+<article class="project">
+  <div class="type">C++</div>
+  <h3>Hotel Management System</h3>
+  <p>Hotel Management System is a modular hotel operations platform built in C++ using core Object-Oriented Programming principles. Room availability tracking, guest reservations, and billing calculations are organized into independent, encapsulated classes, each keeping its data private and accessible only through public methods, making the system easier to test, maintain, and extend over time.</p>
+  <div class="tags">
+    <span class="tag">C++</span>
+    <span class="tag">OOP</span>
+    <span class="tag">System Design</span>
+  </div>
+</article>
+
+<article class="project">
+  <div class="type">C++</div>
+  <h3>Lottery Management System</h3>
+  <p>Lottery Management System is a C++ administrative application that automates fair lottery draws using PRNG algorithms like the Mersenne Twister with uniform distribution, freshly seeded each run to keep ticket selection unpredictable. It uses dynamic data structures to manage participant lists and ticket allocations, applying careful memory handling before processing winner payouts.</p>
+  <div class="tags">
+    <span class="tag">C++</span>
+    <span class="tag">Algorithms</span>
+  </div>
+</article>
+
+</div>
+</div>
+</section>
 
 <section id="experience"><div class="container">
 <h2 class="section-title">Work Experience</h2>
