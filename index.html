@@ -10,7 +10,10 @@
 :root{--bg:#f7f8fc;--card:#fff;--text:#172033;--muted:#667085;--accent:#5b5bd6;--line:#e6e8ef}
 *{box-sizing:border-box;scroll-behavior:smooth}html,body{overflow-x:hidden;max-width:100%}body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
 nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav{max-width:1100px;margin:auto;padding:16px 24px;display:flex;justify-content:space-between;align-items:center}.logo{font-weight:800;font-size:20px}.nav a{margin-left:22px;text-decoration:none;color:#475467;font-size:14px;font-weight:600}.nav a:hover{color:var(--accent)}
+.nav{max-width:1100px;margin:auto;padding:16px 24px;display:flex;justify-content:space-between;align-items:center}
+/* Updated logo size */
+.logo{font-weight:800;font-size:24px;white-space:nowrap}
+.nav a{margin-left:22px;text-decoration:none;color:#475467;font-size:14px;font-weight:600}.nav a:hover{color:var(--accent)}
 .container{max-width:1100px;margin:auto;padding:0 24px}.hero{padding:105px 0 90px;display:grid;grid-template-columns:1.35fr .65fr;gap:50px;align-items:center}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px}.hero h1{font-size:55px;line-height:1.05;margin:14px 0}.hero h1 span{color:var(--accent)}.hero p{font-size:18px;color:var(--muted);max-width:700px;text-align:justify;text-justify:inter-word}.buttons{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}.btn{padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700;font-size:14px;border:1px solid var(--line);background:white;color:var(--text)}.btn.primary{background:var(--accent);color:white;border-color:var(--accent)}
 .profile-card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:30px;box-shadow:0 18px 50px rgba(20,25,45,.08)}.profile-icon{width:80px;height:80px;border-radius:20px;background:#ececff;color:var(--accent);display:grid;place-items:center;font-size:28px;font-weight:800;margin-bottom:22px}.profile-card h3{margin:0 0 6px}.profile-card p{font-size:14px;margin:0;color:var(--muted)}
 section{padding:82px 0}section.alt{background:#fff}.section-title{font-size:34px;margin:0 0 12px}.section-sub{color:var(--muted);max-width:700px;margin-bottom:35px}
@@ -20,11 +23,15 @@ section{padding:82px 0}section.alt{background:#fff}.section-title{font-size:34px
 .timeline{border-left:2px solid #ddd;padding-left:25px}.item{margin-bottom:35px}.item h3{margin:0}.item .meta{font-size:13px;color:var(--accent);font-weight:700}.item p{color:var(--muted);max-width:780px;text-align:justify;text-justify:inter-word}
 .cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.cert{padding:20px;background:#fff;border:1px solid var(--line);border-radius:15px;font-size:14px;font-weight:600}.cert small{display:block;color:var(--muted);margin-top:5px}
 .contact{background:#171b2c;color:white;border-radius:24px;padding:50px}.contact p{color:#c7ccda;max-width:650px;text-align:justify;text-justify:inter-word}.contact a{color:white;text-decoration:none}.footer{padding:30px 0;color:var(--muted);font-size:13px;text-align:center}
+
+/* Responsive updates to keep navbar on one line on mobile */
 @media(max-width:760px){
 .container{padding:0 18px}
-.nav{padding:14px 18px;flex-wrap:wrap;row-gap:8px}
-.nav>div:last-child{display:flex;flex-wrap:wrap;gap:6px 14px}
-.nav a{margin-left:0;font-size:13px}
+.nav{padding:12px 14px; flex-wrap:nowrap; gap:12px; justify-content:space-between}
+.nav .logo{font-size:20px}
+.nav>div:last-child{display:flex; flex-wrap:nowrap; gap:10px; overflow-x:auto; -webkit-overflow-scrolling:touch; padding-bottom:2px}
+.nav>div:last-child::-webkit-scrollbar{display:none} /* Hide scrollbar for a clean look */
+.nav a{margin-left:0; font-size:12px; white-space:nowrap}
 .hero{grid-template-columns:1fr;padding:70px 0 60px;gap:30px}
 .hero h1{font-size:34px}
 .hero p{font-size:16px}
@@ -40,7 +47,9 @@ section{padding:56px 0}
 }
 @media(max-width:420px){
 .hero h1{font-size:28px}
-.nav .logo{font-size:17px}
+.nav .logo{font-size:18px}
+.nav>div:last-child{gap:8px}
+.nav a{font-size:11px}
 }
 </style>
 </head>
