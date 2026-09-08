@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f7f8fc;--card:#fff;--text:#172033;--muted:#667085;--accent:#5b5bd6;--line:#e6e8ef}
-*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+*{box-sizing:border-box;scroll-behavior:smooth}html,body{overflow-x:hidden;max-width:100%}body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
 nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .nav{max-width:1100px;margin:auto;padding:16px 24px;display:flex;justify-content:space-between;align-items:center}.logo{font-weight:800;font-size:20px}.nav a{margin-left:22px;text-decoration:none;color:#475467;font-size:14px;font-weight:600}.nav a:hover{color:var(--accent)}
 .container{max-width:1100px;margin:auto;padding:0 24px}.hero{padding:105px 0 90px;display:grid;grid-template-columns:1.35fr .65fr;gap:50px;align-items:center}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px}.hero h1{font-size:55px;line-height:1.05;margin:14px 0}.hero h1 span{color:var(--accent)}.hero p{font-size:18px;color:var(--muted);max-width:700px;text-align:justify;text-justify:inter-word}.buttons{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}.btn{padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700;font-size:14px;border:1px solid var(--line);background:white;color:var(--text)}.btn.primary{background:var(--accent);color:white;border-color:var(--accent)}
@@ -22,8 +22,9 @@ section{padding:82px 0}section.alt{background:#fff}.section-title{font-size:34px
 .contact{background:#171b2c;color:white;border-radius:24px;padding:50px}.contact p{color:#c7ccda;max-width:650px;text-align:justify;text-justify:inter-word}.contact a{color:white;text-decoration:none}.footer{padding:30px 0;color:var(--muted);font-size:13px;text-align:center}
 @media(max-width:760px){
 .container{padding:0 18px}
-.nav{padding:14px 18px;flex-wrap:wrap;gap:10px 0;row-gap:8px}
-.nav a{margin-left:0;margin-right:14px;font-size:13px}
+.nav{padding:14px 18px;flex-wrap:wrap;row-gap:8px}
+.nav>div:last-child{display:flex;flex-wrap:wrap;gap:6px 14px}
+.nav a{margin-left:0;font-size:13px}
 .hero{grid-template-columns:1fr;padding:70px 0 60px;gap:30px}
 .hero h1{font-size:34px}
 .hero p{font-size:16px}
@@ -34,7 +35,8 @@ section{padding:82px 0}section.alt{background:#fff}.section-title{font-size:34px
 section{padding:56px 0}
 .section-title{font-size:26px}
 .contact{padding:28px 20px}
-.contact>div[style]{grid-template-columns:1fr !important;gap:24px !important}
+.contact[style]{grid-template-columns:1fr !important;gap:24px !important}
+.hero p,.about p,.project p,.item p,.contact p{text-align:left;text-justify:auto}
 }
 @media(max-width:420px){
 .hero h1{font-size:28px}
@@ -74,7 +76,7 @@ section{padding:56px 0}
 <div class="project-grid">
 <article class="project"><div class="type">Data Analytics</div><h3>Metro Care Hospital</h3><p><b>Patient & Appointment Analytics Dashboard</b></p><p>Architected an end-to-end business intelligence pipeline centered around a dimensional star-schema data model. Sourced operational healthcare records from PostgreSQL, utilizing Power Query for structured data cleansing, transformation, and relational mapping. Formulated dynamic DAX measures to calculate critical operational metrics, evaluate patient flow throughput, and visualize peak resource utilization across hospital departments.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">PostgreSQL</span><span class="tag">DAX</span><span class="tag">Power Query</span><span class="tag">Star Schema</span></div></article>
 
-<article class="project"><div class="type">Data Analytics</div><h3>Urban Basket</h3><p><b>Retail Database & SQL Analysis</b></p><p>Designed and implemented a normalized relational database schema in PostgreSQL, establishing strict primary and foreign key constraints to enforce transactional data integrity across multi-table retail structures. Utilized advanced SQL techniques including Common Table Expressions (CTEs), window functions for performance ranking, conditional CASE logic, and multi-table joins to aggregate complex transactional records, analyze purchasing behavior, and expose key revenue performance trends.</p><div class="tags"><span class="tag">PostgreSQL</span><span class="tag">SQL</span><span class="tag">Database Design</span><span class="tag">CTEs</span><span class="tag">Window Functions</span></div></article>
+<article class="project"><div class="type">Data Analytics</div><h3>Urban Basket</h3><p><b>Retail Database & SQL Analysis</b></p><p>Designed and implemented a normalized relational database schema in PostgreSQL, establishing strict primary and foreign key constraints to enforce transactional data integrity across multi-table retail structures. Utilized advanced SQL techniques, including Common Table Expressions (CTEs), window functions for performance ranking, conditional CASE logic, and multi-table joins, to aggregate complex transactional records, analyze purchasing behavior, and expose key revenue performance trends.</p><div class="tags"><span class="tag">PostgreSQL</span><span class="tag">SQL</span><span class="tag">Database Design</span><span class="tag">CTEs</span><span class="tag">Window Functions</span></div></article>
 
 <article class="project"><div class="type">Data Analytics</div><h3>BookNook Books</h3><p><b>Data Analytics Pipeline</b></p><p>Engineered an automated end-to-end data processing pipeline utilizing Python with SQLAlchemy to systematically clean, validate, and load raw order data into PostgreSQL. Applied Pandas and NumPy for numerical operations and statistical trend analysis, and synthesized the output using Seaborn, Matplotlib, and Folium to map out spatial purchase distributions, inventory velocity, and customer buying behavior.</p><div class="tags"><span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">SQLAlchemy</span><span class="tag">Pandas</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">Folium</span></div></article>
 
@@ -93,7 +95,7 @@ section{padding:56px 0}
 
 <section id="experience"><div class="container">
 <h2 class="section-title">Work Experience</h2>
-<div class="timeline"><div class="item"><h3>PHP Developer Intern</h3><div class="meta">Elabd Technologies, Islamabad · Jul 2023 – Sep 2023</div><p>Developed and maintained responsive web pages using HTML, CSS, and Bootstrap, translating design mock-ups into functional, cross-browser-compatible interfaces. Debugged UI inconsistencies, collaborated with a small development team through code reviews and daily stand-ups, and built reusable responsive navigation and form components.</p></div></div>
+<div class="timeline"><div class="item"><h3>PHP Developer Intern</h3><div class="meta">Elabd Technologies, Islamabad · Jul 2023 – Sep 2023</div><p>Converted Figma design files into pixel-accurate, functional web pages using HTML, CSS, Bootstrap, JavaScript, and jQuery, closely matching the intended layout, spacing, and interactions from design to live code. Worked with AngularJS to build dynamic, interactive front-end components. Built additional practice projects during the internship, including a shopping web page and an interactive calculator, to strengthen front-end implementation skills. Also worked on PHP fundamentals, gaining exposure to server-side scripting alongside front-end development. Debugged UI inconsistencies across browsers and collaborated with a small development team through code reviews and daily stand-ups.</p></div></div>
 </div></section>
 
 <section id="education" class="alt"><div class="container">
@@ -102,8 +104,10 @@ section{padding:56px 0}
 <div class="item"><h3>Bachelor of Science in Software Engineering</h3><div class="meta">Capital University of Science and Technology, Islamabad · 2020–2024</div></div>
 </div>
 <div class="cert-grid">
-<div class="cert">Dean's Honor Roll</div>
-<div class="cert">IBM Data Analytics Professional Certificate <small>IBM</small></div>
+<div class="cert">Dean's Honor Roll <small>Capital University of Science and Technology</small></div>
+<div class="cert">Certificate of Appreciation <small>Computer Networking Competition · Capital University of Science & Technology</small></div>
+<div class="cert">IBM Data Analytics Professional Certificate <small>IBM</small><small><a href="https://www.linkedin.com/in/tooba-tariq-52097a237/details/certifications/" target="_blank" style="color:var(--accent);font-weight:700">View all 11 certificates →</a></small></div>
+
 </div>
 </div></section>
 
