@@ -34,7 +34,11 @@ html, body {
 p {
   text-align: justify;
   text-justify: inter-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
   hyphens: auto;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 /* NAVIGATION */
@@ -345,7 +349,13 @@ section.alt {
 /* MOBILE RESPONSIVE STYLES */
 @media (max-width: 900px) {
   p {
-    text-align: left;
+    text-align: justify;
+    text-justify: inter-character;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    word-break: normal;
+    overflow-wrap: break-word;
   }
   .container {
     padding-left: 20px;
